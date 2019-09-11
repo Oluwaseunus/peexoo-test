@@ -9,37 +9,47 @@
     </div>
     <div class="nav--icons">
       <div class="news">
-        <icon-base icon-color="black" icon-name="news"><icon-news /></icon-base>
+        <IconBase iconName="News" iconColor="black"><IconNews /></IconBase>
       </div>
       <div class="notifications">
-        <IconBase><IconNotifications /></IconBase>
+        <IconBase iconName="Notifications" iconColor="black"
+          ><IconNotifications
+        /></IconBase>
       </div>
       <div class="messages">
-        <IconBase iconName="messages" iconColor="white"
+        <IconBase iconName="Messages" iconColor="black"
           ><IconMessages
         /></IconBase>
       </div>
     </div>
     <div class="profile">
-      <div class="profile--picture">
-        <img src="../assets/Oghenetega.png" alt="Oghenetega" />
-      </div>
+      <img
+        src="../assets/Oghenetega.png"
+        alt="Oghenetega"
+        class="profile--picture"
+      />
       <div class="profile--name">
         Oghenetega
       </div>
-      <div class="nav--dropdown">&#709;</div>
+      <div class="nav--dropdown">
+        <IconBase iconName="ArrowDown" iconColor="black"
+          ><IconArrowDown
+        /></IconBase>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import IconBase from './IconBase';
+import IconArrowDown from './icons/IconArrowDown';
 import IconMessages from './icons/IconMessages';
 import IconNews from './icons/IconNews';
 import IconNotifications from './icons/IconNotifications';
 
 export default {
   components: {
+    IconArrowDown,
     IconBase,
     IconMessages,
     IconNews,
@@ -51,7 +61,7 @@ export default {
 <style lang="scss" scoped>
 .nav {
   display: grid;
-  grid-template-columns: 2fr repeat(4, 1.5fr);
+  grid-template-columns: 4fr repeat(2, 1fr) 0.6fr 1.4fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -68,15 +78,13 @@ export default {
     justify-content: space-between;
 
     &--picture {
-      img {
-        height: 10rem;
-        width: 10rem;
-      }
+      height: 10rem;
+      width: 10rem;
     }
+  }
 
-    &--name {
-      margin-right: auto;
-    }
+  svg {
+    cursor: pointer;
   }
 }
 </style>
