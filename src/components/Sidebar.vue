@@ -3,9 +3,7 @@
     <div class="logo"></div>
     <div class="links">
       <div class="link">
-        <IconBase iconName="dashboard" iconColor="white"
-          ><IconDashboard
-        /></IconBase>
+        <icon-base icon-name="dashboard" icon-color="white"><icon-dashboard /></icon-base>
         Dashboard
       </div>
       <div class="link"><span class="icon icon--profile"></span> Profile</div>
@@ -91,7 +89,7 @@ export default {
     &::before {
       content: '';
       height: 100%;
-      width: 5%;
+      width: 2%;
       position: absolute;
       left: 0;
       top: 0;
