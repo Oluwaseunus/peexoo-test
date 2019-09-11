@@ -20,6 +20,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora:700&display=swap');
 
 *,
 *::before,

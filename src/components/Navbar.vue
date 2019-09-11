@@ -31,10 +31,10 @@
 </template>
 
 <script>
-import IconBase from './IconBase'
-import IconMessages from './icons/IconMessages'
-import IconNews from './icons/IconNews'
-import IconNotifications from './icons/IconNotifications'
+import IconBase from './IconBase';
+import IconMessages from './icons/IconMessages';
+import IconNews from './icons/IconNews';
+import IconNotifications from './icons/IconNotifications';
 
 export default {
   components: {
@@ -65,8 +65,14 @@ export default {
     justify-content: space-between;
 
     &--picture {
-      height: 10rem;
-      width: 10rem;
+      img {
+        height: 10rem;
+        width: 10rem;
+      }
+    }
+
+    &--name {
+      margin-right: auto;
     }
   }
 }

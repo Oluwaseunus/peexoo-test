@@ -1,16 +1,18 @@
 <template>
   <div class="main">
     <Navbar />
-    <div class="availability">Availability Ting</div>
+    <Availability />
   </div>
 </template>
 
 <script>
 import Navbar from './Navbar';
+import Availability from './Availability';
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    Availability
   }
 };
 </script>
