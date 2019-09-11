@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+
 *,
 *::before,
 *::after {
