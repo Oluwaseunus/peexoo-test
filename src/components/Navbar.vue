@@ -9,13 +9,15 @@
     </div>
     <div class="nav--icons">
       <div class="news">
-        <icon-base :icon-color="black"><icon-news /></icon-base>
+        <icon-base icon-color="black" icon-name="news"><icon-news /></icon-base>
       </div>
       <div class="notifications">
         <IconBase><IconNotifications /></IconBase>
       </div>
       <div class="messages">
-        <IconBase><IconMessages /></IconBase>
+        <IconBase iconName="messages" iconColor="white"
+          ><IconMessages
+        /></IconBase>
       </div>
     </div>
     <div class="profile">
@@ -38,6 +40,7 @@ import IconNotifications from './icons/IconNotifications';
 
 export default {
   components: {
+    IconBase,
     IconMessages,
     IconNews,
     IconNotifications

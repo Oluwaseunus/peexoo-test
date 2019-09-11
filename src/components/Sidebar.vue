@@ -3,26 +3,81 @@
     <div class="logo"></div>
     <div class="links">
       <div class="link">
-        <icon-base icon-name="dashboard" icon-color="white"><icon-dashboard /></icon-base>
-        Dashboard
+        <IconBase iconName="Dashboard" iconColor="white"
+          ><IconDashboard
+        /></IconBase>
+        <p class="link--text">
+          Dashboard
+        </p>
       </div>
-      <div class="link"><span class="icon icon--profile"></span> Profile</div>
       <div class="link">
-        <span class="icon icon--package"></span> Pricing Package
+        <IconBase iconName="Profile" iconColor="white"
+          ><IconProfile
+        /></IconBase>
+        <p class="link--text">
+          Profile
+        </p>
+      </div>
+      <div class="link">
+        <IconBase iconName="Package" iconColor="white"
+          ><IconPackage
+        /></IconBase>
+        <p class="link--text">
+          Pricing Package
+        </p>
       </div>
       <div class="link link--active">
-        <span class="icon icon--availability"></span> Availability
+        <IconBase iconName="Availability" iconColor="#ffb603"
+          ><IconAvailability
+        /></IconBase>
+        <p class="link--text">
+          Availability
+        </p>
       </div>
-      <div class="link"><span class="icon icon--bookings"></span> Bookings</div>
       <div class="link">
-        <span class="icon icon--portfolio"></span> Portfolio
+        <IconBase iconName="Bookings" iconColor="white"
+          ><IconBookings
+        /></IconBase>
+        <p class="link--text">
+          Bookings
+        </p>
       </div>
-      <div class="link"><span class="icon icon--albums"></span> Albums</div>
       <div class="link">
-        <span class="icon icon--subscriptions"></span> Subscriptions
+        <IconBase iconName="Portfolio" iconColor="white"
+          ><IconPortfolio
+        /></IconBase>
+        <p class="link--text">
+          Portfolio
+        </p>
       </div>
-      <div class="link"><span class="icon icon--payments"></span> Payments</div>
-      <div class="link"><span class="icon icon--settings"></span> Settings</div>
+      <div class="link">
+        <IconBase iconName="Albums" iconColor="white"><IconAlbums /></IconBase>
+        <p class="link--text">
+          Albums
+        </p>
+      </div>
+      <div class="link">
+        <IconBase iconName="Subscriptions" iconColor="white"
+          ><IconSubscriptions
+        /></IconBase>
+        <p class="link--text">
+          Subscriptions
+        </p>
+      </div>
+      <div class="link">
+        <IconBase iconName="Payments" iconColor="white"
+          ><IconPayments
+        /></IconBase>
+        <p class="link--text">
+          Payments
+        </p>
+      </div>
+      <div class="link"><IconBase iconName="Settings" iconColor="white"
+          ><IconSettings
+        /></IconBase>
+        <p class="link--text">
+          Settings
+        </p></div>
     </div>
     <div class="info">
       &copy; 2019 Peexoo Technologies
@@ -32,12 +87,30 @@
 
 <script>
 import IconBase from './IconBase';
+import IconAlbums from './icons/IconAlbums';
+import IconAvailability from './icons/IconAvailability';
+import IconBookings from './icons/IconBookings';
 import IconDashboard from './icons/IconDashboard';
+import IconPackage from './icons/IconPackage';
+import IconPayments from './icons/IconPayments';
+import IconPortfolio from './icons/IconPortfolio';
+import IconProfile from './icons/IconProfile';
+import IconSettings from './icons/IconSettings';
+import IconSubscriptions from './icons/IconSubscriptions';
 
 export default {
   components: {
+    IconAlbums,
+    IconAvailability,
     IconBase,
-    IconDashboard
+    IconBookings,
+    IconDashboard,
+    IconPackage,
+    IconPayments,
+    IconPortfolio,
+    IconProfile,
+    IconSettings,
+    IconSubscriptions
   }
 };
 </script>
@@ -80,11 +153,22 @@ export default {
   text-align: center;
   line-height: 17px;
   padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--text {
+    cursor: pointer;
+  }
 
   &--active {
     color: #ffb603;
     background: #5c5c5c;
     position: relative;
+
+    svg {
+      fill: #ffb603;
+    }
 
     &::before {
       content: '';
@@ -108,5 +192,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: white;
+  margin-right: 1rem;
+  margin-bottom: 0.2rem;
 }
 </style>
