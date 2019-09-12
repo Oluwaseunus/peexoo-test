@@ -40,16 +40,19 @@
 
       <button class="btn btn--inverted">Today</button>
     </div>
+    <Calendar />
   </div>
 </template>
 
 <script>
+import Calendar from './Calendar';
 import IconBase from './IconBase';
 import IconAvailability from './icons/IconAvailability';
 import IconList from './icons/IconList';
 
 export default {
   components: {
+    Calendar,
     IconBase,
     IconAvailability,
     IconList
@@ -64,7 +67,6 @@ export default {
 
 .header {
   position: relative;
-  margin-bottom: 4rem;
 }
 
 .title {
@@ -101,7 +103,7 @@ export default {
 }
 
 .btn {
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 500;
@@ -122,7 +124,7 @@ export default {
   }
 
   &--inverted {
-    background: white;
+    background: #fff;
     color: #ffb603;
     border: 1px solid #ffb603;
     padding: 0.6rem 1.7rem;
@@ -158,6 +160,7 @@ export default {
   align-items: center;
   width: 25%;
   font-size: 1.8rem;
+  margin: 2rem 0;
 
   &__arrows {
     display: flex;

@@ -3,7 +3,7 @@
     <div class="logo"></div>
     <div class="links">
       <div class="link">
-        <IconBase iconName="Dashboard" iconColor="white"
+        <IconBase iconName="Dashboard" iconColor="#fff"
           ><IconDashboard
         /></IconBase>
         <p class="link--text">
@@ -11,17 +11,13 @@
         </p>
       </div>
       <div class="link">
-        <IconBase iconName="Profile" iconColor="white"
-          ><IconProfile
-        /></IconBase>
+        <IconBase iconName="Profile" iconColor="#fff"><IconProfile /></IconBase>
         <p class="link--text">
           Profile
         </p>
       </div>
       <div class="link">
-        <IconBase iconName="Package" iconColor="white"
-          ><IconPackage
-        /></IconBase>
+        <IconBase iconName="Package" iconColor="#fff"><IconPackage /></IconBase>
         <p class="link--text">
           Pricing Package
         </p>
@@ -35,7 +31,7 @@
         </p>
       </div>
       <div class="link">
-        <IconBase iconName="Bookings" iconColor="white"
+        <IconBase iconName="Bookings" iconColor="#fff"
           ><IconBookings
         /></IconBase>
         <p class="link--text">
@@ -43,7 +39,7 @@
         </p>
       </div>
       <div class="link">
-        <IconBase iconName="Portfolio" iconColor="white"
+        <IconBase iconName="Portfolio" iconColor="#fff"
           ><IconPortfolio
         /></IconBase>
         <p class="link--text">
@@ -51,13 +47,13 @@
         </p>
       </div>
       <div class="link">
-        <IconBase iconName="Albums" iconColor="white"><IconAlbums /></IconBase>
+        <IconBase iconName="Albums" iconColor="#fff"><IconAlbums /></IconBase>
         <p class="link--text">
           Albums
         </p>
       </div>
       <div class="link">
-        <IconBase iconName="Subscriptions" iconColor="white"
+        <IconBase iconName="Subscriptions" iconColor="#fff"
           ><IconSubscriptions
         /></IconBase>
         <p class="link--text">
@@ -65,19 +61,21 @@
         </p>
       </div>
       <div class="link">
-        <IconBase iconName="Payments" iconColor="white"
+        <IconBase iconName="Payments" iconColor="#fff"
           ><IconPayments
         /></IconBase>
         <p class="link--text">
           Payments
         </p>
       </div>
-      <div class="link"><IconBase iconName="Settings" iconColor="white"
+      <div class="link">
+        <IconBase iconName="Settings" iconColor="#fff"
           ><IconSettings
         /></IconBase>
         <p class="link--text">
           Settings
-        </p></div>
+        </p>
+      </div>
     </div>
     <div class="info">
       &copy; 2019 Peexoo Technologies
@@ -182,7 +180,7 @@ export default {
   }
 
   .icon {
-    fill: white;
+    fill: #fff;
   }
 }
 
@@ -197,7 +195,7 @@ export default {
 svg {
   width: 1.8rem;
   height: 1.8rem;
-  fill: white;
+  fill: #fff;
   margin-right: 1rem;
   margin-bottom: 0.2rem;
 }
