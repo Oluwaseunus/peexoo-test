@@ -19,7 +19,9 @@
       <div class="search--schedule">
         <div class="searchbox">
           <input type="text" placeholder="Search" />
-          <div class="search--button"></div>
+          <IconBase iconName="Search" iconColor="#D4D4D4">
+            <IconSearch />
+          </IconBase>
         </div>
         <button class="btn">+ Add Schedule</button>
       </div>
@@ -49,13 +51,15 @@ import Calendar from './Calendar';
 import IconBase from './IconBase';
 import IconAvailability from './icons/IconAvailability';
 import IconList from './icons/IconList';
+import IconSearch from './icons/IconSearch';
 
 export default {
   components: {
     Calendar,
     IconBase,
     IconAvailability,
-    IconList
+    IconList,
+    IconSearch
   }
 };
 </script>
@@ -87,6 +91,7 @@ export default {
   width: 22rem;
   justify-content: space-between;
   padding: 1rem 0;
+  cursor: pointer;
 
   svg {
     margin-bottom: 0.4rem;
@@ -135,10 +140,16 @@ export default {
 .searchbox {
   background: #fffefc;
   border: 1px solid #d4d4d4;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   justify-content: space-between;
   width: 23rem;
   position: relative;
+
+  svg {
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+  }
 
   input {
     border: none;

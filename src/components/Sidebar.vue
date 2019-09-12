@@ -119,7 +119,7 @@ export default {
   padding: 2rem 0;
   color: #ccc;
   text-align: center;
-  height: 100vh;
+  height: 100%;
 
   display: grid;
   grid-template-columns: 1fr;

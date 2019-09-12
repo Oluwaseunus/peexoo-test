@@ -9,15 +9,15 @@
     </div>
     <div class="nav--icons">
       <div class="news">
-        <IconBase iconName="News" iconColor="black"><IconNews /></IconBase>
+        <IconBase iconName="News" iconColor="#4D4D4D"><IconNews /></IconBase>
       </div>
       <div class="notifications">
-        <IconBase iconName="Notifications" iconColor="black"
+        <IconBase iconName="Notifications" iconColor="#4D4D4D"
           ><IconNotifications
         /></IconBase>
       </div>
       <div class="messages">
-        <IconBase iconName="Messages" iconColor="black"
+        <IconBase iconName="Messages" iconColor="#4D4D4D"
           ><IconMessages
         /></IconBase>
       </div>
@@ -61,7 +61,7 @@ export default {
 <style lang="scss" scoped>
 .nav {
   display: grid;
-  grid-template-columns: 4fr repeat(2, 1fr) 0.6fr 1.4fr;
+  grid-template-columns: 4fr repeat(2, 1fr) 0.65fr 1.4fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -81,6 +81,11 @@ export default {
       height: 10rem;
       width: 10rem;
     }
+  }
+
+  & > &--icons {
+    display: flex;
+    justify-content: space-evenly;
   }
 
   svg {

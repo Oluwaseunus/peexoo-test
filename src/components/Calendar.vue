@@ -194,6 +194,10 @@
 
   &--group {
     flex-grow: 3;
+
+    .event {
+      text-align: center;
+    }
   }
 }
 
