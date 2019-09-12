@@ -148,12 +148,15 @@ export default {
   font-size: 1.4rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  text-align: center;
   line-height: 17px;
   padding: 2rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+
+  svg {
+    margin-left: 7.5rem;
+  }
 
   &--text {
     cursor: pointer;
