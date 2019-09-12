@@ -153,14 +153,6 @@
 <script></script>
 
 <style lang="scss" scoped>
-/* .calendar {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 0.5fr repeat(5, 1fr);
-  grid-column-gap: 4px;
-  grid-row-gap: 4px;
-} */
-
 .days,
 .week {
   display: flex;
@@ -173,7 +165,7 @@
   font-size: 1.2rem;
   line-height: 1.4rem;
   text-transform: uppercase;
-  flex-grow: 1;
+  flex: 1;
 
   display: flex;
   justify-content: center;
@@ -181,7 +173,6 @@
   border: 1px solid #d4d4d4;
   border-radius: 0.3rem;
   height: 5rem;
-  width: 98%;
   background: #fff;
 }
 
