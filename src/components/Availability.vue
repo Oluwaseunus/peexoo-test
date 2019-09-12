@@ -4,11 +4,15 @@
       <p class="title">Availability</p>
       <div class="switch--view">
         <div class="calendar--view">
-          <!-- Calendar icon goes here -->
+          <IconBase iconName="Calendar" iconColor="#B58000">
+            <IconAvailability />
+          </IconBase>
           Calendar view
         </div>
         <div class="list--view">
-          <!-- List icon goes here -->
+          <IconBase iconName="List" iconColor="#B58000">
+            <IconList />
+          </IconBase>
           List view
         </div>
       </div>
@@ -39,6 +43,20 @@
   </div>
 </template>
 
+<script>
+import IconBase from './IconBase';
+import IconAvailability from './icons/IconAvailability';
+import IconList from './icons/IconList';
+
+export default {
+  components: {
+    IconBase,
+    IconAvailability,
+    IconList
+  }
+};
+</script>
+
 <style lang="scss" scoped>
 .availability {
   padding: 6rem;
@@ -64,9 +82,13 @@
   font-size: 1.4rem;
   line-height: 1.9rem;
   display: flex;
-  width: 20rem;
+  width: 22rem;
   justify-content: space-between;
   padding: 1rem 0;
+
+  svg {
+    margin-bottom: 0.4rem;
+  }
 }
 
 .search--schedule {
